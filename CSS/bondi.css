@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+:root {
+    --back-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+div.main-btn a {
+    background: var(--red-color);
+    border: none;
+    color: var(--yellow-color);
+    &:hover {
+        color: var(--yellow-color);
+        background: var(--red-color);
+    }
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+/* Start Header */
+header {
+    padding: 10px 0;
+    width: 100%;
+    background: var(--back-color);
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 11111111;
+}
+header .navbar-nav {
+    .nav-link {
+        color: #fff;
+        font-size: 16px;
+    }
+    .nav-link.active, 
+    .nav-link:focus, 
+    .nav-link:hover {
+        color: var(--green-color);
+    }
+}
+header nav .navbar-toggler {
+    border: none;
+}
+header nav .navbar-toggler:focus {
+    box-shadow: none;
+}
+header nav .navbar-toggler .bars {
+    color: #fff;
+    font-size: 25px;
+}
+header nav .container .search svg {
+    color: #fff;
+    padding: 0 10px;
+    font-size: 20px;
+    border-left: solid 2px #fff;
+}
+/* End Header */
+/* Start Landing */
+.landing {
+    background: var(--back-color);
+    height: 100vh;
+}
+/* End Landing */
+/* Start Section Services */
+.sec-header {
+    padding: 30px 0;
+    img {
+        padding: 20px 0;
+    }
+    p {
+        color: #777;
+        position: relative;
+        padding-bottom: 10px;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 10px;
+            height: 2px;
+            width: 150px;
+            background: var(--green-color);
+        }
+    }
+}
+.services {
+    padding: 50px 0;
+}
+.services .container .box {
+    position: relative;
+    span {
+        color: var(--green-color);
+        font-size: 100px;
+        opacity: 0.5;
+    }
+    svg {
+        color: var(--green-color);
+        font-size: 50px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    h3 {
+        padding: 10px 0;
+        color: var(--yellow-color);
+    }
+    p {
+        color: #777;
+    }
+}
+/* End Section Services */
+/* Start Section Portfolio */
+.our-works {
+    padding: 50px 0;
+    background: var(--section-color);
+}
+.list {
+    li {
+        margin: 0 10px;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover {
+            color: var(--red-color);
+        }
+    }
+    .active {
+        color: var(--yellow-color);
+        background: var(--red-color);
+        padding: 10px 20px;
+    }
+}
+.our-works .container div .box {
+    position: relative;
+    overflow: hidden;
+}
+.our-works .container div .box::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: var(--green-color);
+    opacity: 0.8;
+    transition: 0.3s linear;
+    z-index: 111;
+}
+.our-works .container div .box::after {
+    content: 'App';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.3s linear;
+    z-index: 1111;
+}
+.our-works .container div .box:hover::before {
+    width: 100%;
+}
+.our-works .container div .box:hover::after {
+    left: 50%;
+    opacity: 1;
+}
+.our-works .more p {
+    padding: 10px 20px;
+    margin: 20px auto;
+    font-weight: bold;
+    width: fit-content;
+    color: var(--yellow-color);
+    background: var(--red-color);
+    cursor: pointer;
+}
+/* End Section Portfolio */
+/* Start Section Meet The Team */
+.team {
+    background: var(--section-color);
+}
+.team .container .title-header h2 {
+    color: var(--yellow-color);
+}
+/* End Section Meet The Team */
+/* Start Section Projects */
+.projects {
+    background: var(--back-color);
+}
+/* End Section Projects */
+/* Start Section Our Blog */
+.our-blog .container .row .card {
+    text-align: start;
+    border: solid 1px #ddd;
+    border-radius: 7px;
+    overflow: hidden;
+    .title {
+        padding: 20px;
+        p {
+            margin: 0;
+        }
+    }
+}
+/* End Section Our Blog */
+/* Start Section Subscribe */
+.subscribe {
+    background: var(--yellow-color);
+}
+.subscribe .container .row {
+    input {
+        all: unset;
+    }
+    input[type = email] {
+        margin-right: 30px;
+        padding: 10px;
+        flex: 1;
+        border-bottom: solid 2px #fff;
+        &::placeholder {
+            color: #fff;
+        }
+    }
+    input[type = submit] {
+        padding: 10px 20px;
+        color: var(--yellow-color);
+        background: var(--back-color);
+    }
+}
+/* End Section Subscribe */
+/* Start Footer */
+footer {
+    padding: 50px;
+    background: var(--back-color);
+    .links p {
+        margin: 10px 0;
+    }
+}
+footer .row .copy {
+    span:first-child {
+        color: var(--green-color);
+    }
+    span:last-child {
+        color: var(--yellow-color);
+    }
+}
+footer .container .contact {
+    a {
+        width: 100%;
+        color: var(--yellow-color);
+        background: var(--red-color);
+    }
+    .social svg {
+        margin-right: 20px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+/* End Footer */

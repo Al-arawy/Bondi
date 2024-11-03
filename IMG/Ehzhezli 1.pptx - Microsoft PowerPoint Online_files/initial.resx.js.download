@@ -1,0 +1,4 @@
+"use strict";(self.odspNextWebpackJsonp=self.odspNextWebpackJsonp||[]).push([["initial.resx"],{186:e=>{e.exports=JSON.parse('{"a":"ملفاتي"}')}
+,180:e=>{e.exports=JSON.parse('{"m":"فتح في Word","h":"فتح في Project","b":"فتح في Excel","g":"فتح في PowerPoint","e":"فتح في OneNote","k":"فتح في Visio","i":"فتح في Publisher","c":"فتح في InfoPath","l":"فتح في Word Online","f":"فتح في PowerPoint Online","a":"فتح في Excel Online","d":"فتح في OneNote Online","j":"فتح في Visio Online"}')}
+,205:e=>{e.exports=JSON.parse('{"c":"لا زالت هنا؟","a":"للحفاظ على الأمان، سيتم تأمين المخزن الشخصي الخاص بك تلقائياً بعد دقيقة واحدة.","b":"البقاء غير مؤمن","f":"المخزن الشخصي غير مقفول","d":"كان هناك مشكلة في قفل المخزن الشخصي الخاص بك. إذا تكرر هذا الأمر مرة أخرى، يمكنك تسجيل الخروج من OneDrive لقفل المخزن الشخصي الخاص بك","e":"إعادة المحاولة"}')}
+}]),define("initial.resx",[],{});
